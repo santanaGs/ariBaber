@@ -34,6 +34,7 @@ export const ServicesDescription = styled.p `
 export const ServiceBox = styled.div`
     width: 22.125rem;
     height: 24.313rem;
+    filter: drop-shadow(4px 6px 14px rgba(0, 0, 0, 0.15));
 `
 
 export const ServiceImage = styled.img`
@@ -41,7 +42,13 @@ export const ServiceImage = styled.img`
 `
 export const ServicePriceBox = styled.div`
     width: 22.125rem;
-    height: 4.75rem;
+    max-height: 4.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0rem 0rem 1rem 1rem;
+    background: #FFF;
+    padding: 1rem;
 `
 
 export const ServiceName = styled.p`
@@ -54,7 +61,7 @@ export const ServiceName = styled.p`
     line-height: 150%;
 `
 
-export const SerivePrice = styled.p`
+export const ServicePrice = styled.p`
     color: #FFF;
     text-align: center;
     font-family: Inter;
@@ -65,4 +72,10 @@ export const SerivePrice = styled.p`
     border-radius: 0.5rem;
     background: linear-gradient(180deg, #D94140 0%, #D94140 100%);
     padding: 1rem;
+`
+
+export const ServicesContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding-block: 3rem;
 `
