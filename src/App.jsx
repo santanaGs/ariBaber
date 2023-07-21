@@ -1,6 +1,8 @@
 import './App.css'
 import { About } from './components/About'
+import { Footer } from './components/Footer/Index'
 import { Header } from './components/Header'
+import { Local } from './components/Local'
 import { Servicos } from './components/Servicos'
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <Header />
       <About />
       <Servicos />
+      <Local/>
+      <Footer/>
     </div>
   )
 }

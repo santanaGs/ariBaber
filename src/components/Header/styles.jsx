@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import background from '../../assets/banner.jpg'
 
 export const Background = styled.div`
-    background: linear-gradient(180deg, #06121E 0%, rgba(6, 18, 30, 0.37) 36.74%, rgba(6, 18, 30, 0.29) 69.61%, #06121E 100%), url(${background}), lightgray -15px -164.265px / 102.014% 120.188%;
+    background: linear-gradient(180deg, #06121e32 0%, rgba(6, 18, 30, 0.37) 36.74%, rgba(6, 18, 30, 0.158) 69.61%, #06121E 100%), url(${background}), lightgray -15px -164.265px / 102.014% 120.188%;
     background-size: cover;
     width: 100%;
     height: 50.9375rem;
