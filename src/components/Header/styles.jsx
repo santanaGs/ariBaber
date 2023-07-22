@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import background from '../../assets/banner.jpg'
+import mobile from '../../assets/background-mobile.png'
 
 export const Background = styled.div`
     background: linear-gradient(180deg, #06121e32 0%, rgba(6, 18, 30, 0.37) 36.74%, rgba(6, 18, 30, 0.158) 69.61%, #06121E 100%), url(${background}), lightgray -15px -164.265px / 102.014% 120.188%;
@@ -7,6 +8,12 @@ export const Background = styled.div`
     width: 100%;
     height: 50.9375rem;
     margin-inline: auto;
+
+    @media screen and (max-width: 768px){
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 `
 
 export const Container = styled.div`
@@ -14,12 +21,23 @@ export const Container = styled.div`
     margin-inline: auto;
     padding: 1rem;
     position: relative;
+
+    @media screen and (max-width: 768px){
+        width: 354px;
+        margin-inline: auto;
+        position: unset;
+    }
 `
 
 export const NavContainer = styled.div`
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 768px){
+        justify-content: center;
+    }
 `
+
 export const IconContainer = styled.div`
     display: flex;
     gap: .3rem;
@@ -32,6 +50,10 @@ export const ButtonContact = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 `
 export const TitleButtonContact = styled.a`
     color: #fff;
@@ -47,6 +69,11 @@ export const Logo = styled.img`
     position: absolute;
     top: 0;
     left: 45%;
+
+    @media screen and (max-width: 768px){
+        left: 30%;
+        top: 5rem;
+    }
 `
 
 export const TextContainer = styled.div`
@@ -56,6 +83,12 @@ export const TextContainer = styled.div`
     margin-inline: auto;
     align-items: center;
     padding-top: 15rem;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        gap: 1rem;
+        margin-top: 5rem;
+    }
 `
 
 export const TitlePage = styled.h1`
@@ -67,6 +100,11 @@ export const TitlePage = styled.h1`
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 4.5rem */
+
+    @media screen and (max-width: 768px){
+        font-size: 1.5rem;
+        margin-inline: auto;
+    }
 
 `
 

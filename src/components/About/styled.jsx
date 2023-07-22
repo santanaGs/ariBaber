@@ -15,15 +15,31 @@ export const AboutContent = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 `
 
 export const ImagesContainer = styled.div`
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    
 `
 
 export const Image = styled.img`
-width: 570px;
-height: 529px;
+    width: 570px;
+    height: 529px;
+
+    @media screen and (max-width: 768px){
+        width: calc(529px/2);
+        height: calc(490.95px/2);
+    }
 `
 
 export const TextContainer = styled.div`
@@ -31,6 +47,10 @@ export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const AboutTitle = styled.h2`
@@ -42,6 +62,11 @@ export const AboutTitle = styled.h2`
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 4.125rem */   
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        width: 100%;
+    }
 `
 
 export const AboutDescription = styled.p`
@@ -52,4 +77,9 @@ export const AboutDescription = styled.p`
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+
+    @media screen and (max-width: 768px) {
+        text-align: justify;
+        font-size: 1rem;
+    }
 `

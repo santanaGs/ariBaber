@@ -6,6 +6,10 @@ export const Container = styled.div`
     width: min(90%, 85.5rem);
     margin-inline: auto;
     padding: 1rem;
+
+    @media screen and (max-width: 768px) {
+        width: 354px;
+    }
 `
 
 export const ServicesTitle = styled.h2`
@@ -29,6 +33,11 @@ export const ServicesDescription = styled.p `
     width: 52.25rem;
     margin-inline: auto;
     margin-block: 1.5rem;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+    }
 `
 
 export const ServiceBox = styled.div`
@@ -38,7 +47,7 @@ export const ServiceBox = styled.div`
 `
 
 export const ServiceImage = styled.img`
-    width: 22.125rem;
+    width: 100%;
 `
 export const ServicePriceBox = styled.div`
     width: 22.125rem;
@@ -49,6 +58,10 @@ export const ServicePriceBox = styled.div`
     border-radius: 0rem 0rem 1rem 1rem;
     background: #FFF;
     padding: 1rem;
+
+    @media screen and (max-width: 768px) {
+        width: 354px;
+    }
 `
 
 export const ServiceName = styled.p`
@@ -78,4 +91,16 @@ export const ServicesContainer = styled.div`
     display: flex;
     justify-content: space-between;
     padding-block: 3rem;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+`
+
+export const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `

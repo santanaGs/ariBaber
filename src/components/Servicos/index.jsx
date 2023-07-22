@@ -1,5 +1,5 @@
 
-import { ServicesSection, Container, ServicesTitle, ServicesDescription, ServiceBox, ServiceImage, ServicePriceBox, ServicePrice, ServiceName, ServicesContainer } from './styles'
+import { ServicesSection, Container, ServicesTitle, ServicesDescription, ServiceBox, ServiceImage, ServicePriceBox, ServicePrice, ServiceName, ServicesContainer, TextContainer } from './styles'
 
 import cabelo from '../../assets/cabelo.png'
 import barba from '../../assets/barba.png'
@@ -9,8 +9,11 @@ export const Servicos = () => {
     return (
         <ServicesSection>
             <Container>
-                <ServicesTitle>SERVIÇOS</ServicesTitle>
-                <ServicesDescription>Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</ServicesDescription>
+                
+                <TextContainer>
+                    <ServicesTitle>SERVIÇOS</ServicesTitle>
+                    <ServicesDescription>Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</ServicesDescription>
+                </TextContainer>
                 <ServicesContainer>
                 <Card img={cabelo} service='Corte de cabelo' price='R$ 45,00'/>
                 <Card img={barba} service='Barba completa' price='R$ 35,00'/>
