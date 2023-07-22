@@ -104,3 +104,7 @@ export const TextContainer = styled.div`
     flex-direction: column;
     align-items: center;
 `
+
+export const Links = styled.a`
+    text-decoration: none;
+`

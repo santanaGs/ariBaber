@@ -1,4 +1,5 @@
 import './App.css'
+import { Analytics } from '@vercel/analytics/react';
 import { About } from './components/About'
 import { Footer } from './components/Footer/Index'
 import { Header } from './components/Header'
@@ -12,8 +13,9 @@ function App() {
       <Header />
       <About />
       <Servicos />
-      <Local/>
-      <Footer/>
+      <Local />
+      <Footer />
+      <Analytics />
     </div>
   )
 }
